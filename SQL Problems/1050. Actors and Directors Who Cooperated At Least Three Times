@@ -1,0 +1,8 @@
+# Write your MySQL query statement below
+#table with id and director, if it repeats 3 times show
+
+SELECT actor_id,director_id
+FROM ActorDirector
+GROUP by actor_id,director_id
+HAVING COUNT(*) >= 3;
+
